@@ -1,0 +1,366 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Signerica';
+    src: url('Font/Signerica_Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;  
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000000;
+    margin-bottom: 1em;
+}
+
+
+p {
+    color: #000000;
+    line-height: 1.6;
+    margin-left: 2em;
+    margin-bottom: 4em;
+    max-width: 50%;
+    text-align: justify;
+}
+
+span {
+    font-family: 'Signerica';
+    font-size: 30px;
+}
+
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1em;
+    text-align: center;
+    border-top: 1px solid #000000; 
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+nav h1 {
+    margin: 0;
+    font-family: 'Signerica';
+    font-size: 50px;
+    
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2em;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+ul, ol {
+    margin: 1em 0;
+    padding: 0 1em;
+    color: #000000;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+
+form {
+    color: #000000;
+    max-width: 600px;
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-left: 2em;
+}
+
+
+input, textarea, select, button {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+button {
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    margin-top: 1em;
+}
+
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 2em;
+    border-collapse: collapse;
+    color: #000000;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+main {
+    flex-grow: 1;
+    padding: 4em;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 2em;
+}
+
+
+.section {
+    margin-bottom: 30px;
+}
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+.content img {
+    margin-left: 7em;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+}
+.content p {
+    flex: 1;
+}
+
+
+.inscription-container {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.inscription-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4em;
+    /*align-items: center; */
+    max-width: 1200px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.inscription-form {
+    max-width: 100%;
+}
+
+.inscription-image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+.connexion-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0px;
+    align-items: start;
+}
+
+.connexion-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.connexion-img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em auto;
+}
+
+
+
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+
+
+
+
+.agenda-table {
+    all: unset; /* Réinitialise toutes les propriétés */
+    display: table; /* Réapplique les propriétés de table */
+    width: 95%;
+    border-collapse: collapse;
+    margin: 2em ;
+    font-size: 16px;
+    text-align: left;
+    border: 1px solid #000;
+    background-color: #fff;   
+}
+
+.agenda-table th, .agenda-table td {
+    all: unset;
+    display: table-cell;
+    padding: 8px;
+    border: 1px solid #000;
+}
+
+.agenda-table th {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+}
+
+.agenda-table td {
+    text-align: center;
+}
+
+.agenda-table tr {
+    all: unset;
+    display: table-row;
+}
+
+.agenda-table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.agenda-table button {
+    all: unset;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000;
+    padding: 8px 12px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0;
+    border: 1px solid #000;
+    font-family: 'Nixie One', sans-serif; 
+}
+
+.agenda-table button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.agenda-table form {
+    all: unset;
+    display: inline-block;
+}
+
+.agenda-table input[type="hidden"] {
+    all: unset;
+    display: none;
+}
+
