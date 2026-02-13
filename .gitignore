@@ -1,0 +1,14 @@
+# Dépendances
+/vendor/
+
+# Environnement
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
