@@ -6,16 +6,16 @@ class PageController extends Controller
 {
   public function home(): string
   {
-    return 'Hello depuis le Front Controller !';
+    return $this->view('home');
   }
 
   public function courses(): string
   {
-    return 'Page des cours';
+    return $this->view('courses');
   }
 
   public function about(): string
   {
-    return 'Page à propos';
+    return $this->view('about');
   }
 }
