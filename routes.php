@@ -2,19 +2,19 @@
 
 use App\Controllers\PageController;
 use App\Controllers\AuthController;
-use App\Controllers\SeanceController;
+use App\Controllers\LessonController;
 
 $router->get('/', [PageController::class, 'home']);
-$router->get('/cours', [PageController::class, 'cours']);
+$router->get('/courses', [PageController::class, 'courses']);
 $router->get('/about', [PageController::class, 'about']);
 
-$router->get('/connexion', [AuthController::class, 'loginForm']);
-$router->post('/connexion', [AuthController::class, 'login']);
-$router->get('/inscription', [AuthController::class, 'registerForm']);
-$router->post('/inscription', [AuthController::class, 'register']);
-$router->get('/deconnexion', [AuthController::class, 'logout']);
+$router->get('/login', [AuthController::class, 'loginForm']);
+$router->post('/login', [AuthController::class, 'login']);
+$router->get('/register', [AuthController::class, 'registerForm']);
+$router->post('/register', [AuthController::class, 'register']);
+$router->get('/logout', [AuthController::class, 'logout']);
 
-$router->get('/agenda', [SeanceController::class, 'agenda']);
-$router->post('/agenda/creer', [SeanceController::class, 'creer']);
-$router->post('/agenda/inscrire', [SeanceController::class, 'inscrire']);
-$router->post('/agenda/annuler', [SeanceController::class, 'annuler']);
+$router->get('/agenda', [LessonController::class, 'agenda']);
+$router->post('/agenda/store', [LessonController::class, 'store']);
+$router->post('/agenda/enroll', [LessonController::class, 'enroll']);
+$router->post('/agenda/cancel', [LessonController::class, 'cancel']);

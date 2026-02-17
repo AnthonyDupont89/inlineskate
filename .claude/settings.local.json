@@ -3,7 +3,8 @@
     "allow": [
       "Bash(dir /S /B \"C:\\\\laragon\\\\www\\\\inlineskate\")",
       "Bash(wc:*)",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Bash(mysql:*)"
     ]
   }
 }

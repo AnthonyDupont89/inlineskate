@@ -2,14 +2,14 @@
 
 namespace App\Controllers;
 
-class PageController
+class PageController extends Controller
 {
   public function home(): string
   {
     return 'Hello depuis le Front Controller !';
   }
 
-  public function cours(): string
+  public function courses(): string
   {
     return 'Page des cours';
   }
