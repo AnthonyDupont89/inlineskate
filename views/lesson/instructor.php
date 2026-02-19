@@ -1,5 +1,7 @@
 <h2>Ajouter une séance de cours</h2>
 <form action="/agenda/store" method="post">
+    <input type="hidden" name="csrf_token" value="<?= $csrfToken ?>">
+
     <label for="date">Date :</label>
     <input type="date" id="date" name="date" required>
 

@@ -7,6 +7,8 @@
         <?php endif; ?>
 
         <form action="/login" method="post">
+            <input type="hidden" name="csrf_token" value="<?= $csrfToken ?>">
+
             <label for="email">Adresse email :</label>
             <input type="email" id="email" name="email" required>
 

@@ -1,6 +1,8 @@
 <section class="inscription-container">
     <div class="inscription-content">
         <form class="inscription-form" action="/register" method="post">
+            <input type="hidden" name="csrf_token" value="<?= $csrfToken ?>">
+
             <h2>Inscription</h2>
 
             <?php if (!empty($error)): ?>

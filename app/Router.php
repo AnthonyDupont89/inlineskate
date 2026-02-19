@@ -18,6 +18,13 @@ class Router
 
   public function resolve(string $uri, string $method): mixed
   {
+    if ($method === 'POST') {
+      $token = $_POST['csrf_token'] ?? '';
+      if (!hash_equals($_SESSION['csrf_token'] ?? '', $token)) {
+        http_response_code(403);
+        return '403 - Requête invalide';
+      }
+    }
     $action = $this->routes[$method][$uri] ?? null;
 
     if (!$action) {

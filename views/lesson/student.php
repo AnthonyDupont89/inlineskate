@@ -18,6 +18,7 @@
                 <td><?= htmlspecialchars($lesson['available_spots']) ?></td>
                 <td>
                     <form action="/agenda/enroll" method="post">
+                        <input type="hidden" name="csrf_token" value="<?= $csrfToken ?>">
                         <input type="hidden" name="lesson_id" value="<?= htmlspecialchars($lesson['id']) ?>">
                         <button type="submit">S'inscrire</button>
                     </form>
@@ -47,6 +48,7 @@
                 <td><?= htmlspecialchars($lesson['level']) ?></td>
                 <td>
                     <form action="/agenda/cancel" method="post">
+                        <input type="hidden" name="csrf_token" value="<?= $csrfToken ?>">
                         <input type="hidden" name="lesson_id" value="<?= htmlspecialchars($lesson['id']) ?>">
                         <button type="submit">Annuler</button>
                     </form>
